@@ -1,0 +1,707 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>정부24</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='정부24'>
+	<meta name='Subject' content='정부24 클론 코딩'>
+	<meta name='Keywords' content='html5, css3, 웹표준, 관공소, 정부24 '>
+	<meta name='Author' content='jioh'>
+	<meta name='Publisher' content='jioh'>
+	<meta name='Description' content='웹접근성, 웹표준을 준수한 정부24 클론 코딩입니다.'>
+	<meta name='Author-Date' content='2022/10/31'>
+	<meta name='Robots' content='index,follow'>
+
+	<link rel='stylesheet' href='./css/reset.css'>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel='stylesheet' href='./css/style.css'>
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        .overlay_info {border-radius: 6px; margin-bottom: 12px; float:left;position: relative; border: 1px solid #ccc; border-bottom: 2px solid #ddd;background-color:#fff;}
+        .overlay_info:nth-of-type(n) {border:0; box-shadow: 0px 1px 2px #888;}
+        .overlay_info a {display: block; background: #d95050; background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center; text-decoration: none; color: #fff; padding:12px 36px 12px 14px; font-size: 14px; border-radius: 6px 6px 0 0}
+        .overlay_info a strong {background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/place_icon.png) no-repeat; padding-left: 27px;}
+        .overlay_info .desc {padding:14px;position: relative; min-width: 190px; height: 56px}
+        .overlay_info img {vertical-align: top;}
+        .overlay_info .address {font-size: 12px; color: #333; position: absolute; left: 80px; right: 14px; top: 24px; white-space: normal}
+        .overlay_info:after {content:'';position: absolute; margin-left: -11px; left: 50%; bottom: -12px; width: 22px; height: 12px; background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png) no-repeat 0 bottom;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2dd25b16c5b181c21d63c339b7069df8"></script>
+    <script type="text/javascript" src="./js/modernizr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>    
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#header">헤더 바로가기</a>
+        <a href="#main-wrap">메인 바로가기</a>
+        <a href="#footer-element">푸터 바로가기</a>
+    </div>
+	<div id="wrap">
+        <header id="header">
+            <div class="gov_top_info">
+                <div class="container">
+                    <p>이 누리집은 대한민국 공식 전자정부 누리집입니다.</p>
+                </div>
+            </div>
+            <div class="top-area">
+                <div class="container">
+                    <div class="toggle-group">
+                        <a href="#" class="toggle-btn" title="For Foreigners">For Foreigners</a>
+                        <ul class="toggle-target">
+                            <li><a href="#" title="새창열림">한국어</a></li>
+                            <li><a href="#" title="새창열림">ENG</a></li>
+                            <li><a href="#" title="새창열림">中文</a></li>
+                        </ul>
+                        <ul class="left-element">
+                            <li><a href="#" target="_blank" title="새창열림" class="kid">어린이</a></li>
+                        </ul>
+                    </div>
+                    <ul class="right-element">
+                        <li><a href="#" title="새창열림">로그인</a></li>
+                        <li><a href="../04_javascript_jquery/javascript/input/form/index.html" title="새창열림">회원가입</a></li>
+                        <li><a href="#" title="새창열림">정부24소개</a></li>
+                        <li><a href="#" title="새창열림">누리집 안내지도</a></li>
+                        <li class="none">
+                            <span>화면크기</span>
+                            <span class="zoom-element">
+                                <span class="zoom-btn out"></span>
+                                <span class="zoom-text">
+                                    <a href="#" title="화면확대축소 초기화">100%</a>
+                                </span>
+                                <span class="zoom-btn in"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="body-area">
+                <div class="gnb-element">
+                    <div class="container">
+                        <h1 class="ir_so">
+                            <a href="#" title="logo">
+                                <img src="./img/img-gov-logo.png" alt="logo">
+                            </a>
+                        </h1>
+                        <div class="gnb-mobile-element">
+                            <ul class="gnb-area">
+                                <li><a href="./index1.html" title="서비스" class="decoration_none">서비스<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2><span class="h2_left">서비스</span></h2>                             
+                                            </div>
+                                            <div class="menu-list">
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="민원신청"   class="decoration_none">민원신청</a></div>
+                                                    <p><a href="#" title="신청·조회·발급"  class="decoration_none">신청·조회·발급</a></p>   
+                                                </div>                                    
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="서비스신청"  class="decoration_none">서비스신청</a></div>
+                                                    <p><a href="#" title="원스톱/생애주기/꾸러미 서비스"  class="decoration_none">원스톱/생애주기/꾸러미 서비스</a></p>
+                                                    <p><a href="#" title="연령/대상별 서비스"  class="decoration_none">연령/대상별 서비스</a></p>
+                                                    <p><a href="#" title="분야별 서비스"  class="decoration_none">분야별 서비스</a></p>
+                                                    <p><a href="#" title="기업단체 서비스"  class="decoration_none">기업단체 서비스</a></p>
+                                                    <p><a href="#" title="외국인 서비스"  class="decoration_none">외국인 서비스</a></p>
+                                                </div>
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="간편 확인/안내"  class="decoration_none">간편 확인/안내</a></div>
+                                                    <p><a href="#" title="사실/진위확인"  class="decoration_none">사실/진위확인</a></p>
+                                                    <p><a href="#" title="행정정보공동이용"  class="decoration_none">행정정보공동이용<br>(e하나로민원)</a></p>
+                                                    <p><a href="#" title="공공자원공유"  class="decoration_none">공공자원공유</a></p>
+                                                    <p><a href="#" title="돌봄시설 등 위치 찾기"  class="decoration_none">돌봄시설 등 위치 찾기</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                <li><a href="./index2.html" title="보조금24" class="decoration_none">보조금24<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo2"><span>보조금24</span></h2>                                               
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" title="나의 혜택" class="decoration_none">나의 혜택</a></p>
+                                                <p><a href="#" title="가족 구성" class="decoration_none">가족 구성</a></p>
+                                                <p><a href="#" title="간편 찾기" class="decoration_none">간편 찾기</a></p>
+                                                <p><a href="#" title="전체 혜택" class="decoration_none">전체 혜택</a></p>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </li>
+                                <li><a href="./index3.html" title="정책정보" class="decoration_none">정책정보<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo3"><span>정책정보</span></h2>                                            
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" class="decoration_none" title="분야별 정책정보">분야별 정책정보</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 조직도">정부/지자체 조직도</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 운영누리집">정부/지자체 운영누리집</a></p>
+                                                <p><a href="#" class="decoration_none" title="행정기간위원회">행정기간위원회</a></p>
+                                                <p><a href="#" class="decoration_none" title="지자체소식">지자체소식</a></p>
+                                                <p><a href="#" class="decoration_none" title="공모전">공모전</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="./index4.html" title="고객센터" class="decoration_none">고객센터<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo4"><span>고객센터</span></h2>
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" class="decoration_none" title="분야별 정책정보">정부24 이용방법</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 조직도">공지사항</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 운영누리집">자료실</a></p>
+                                                <p><a href="#" class="decoration_none" title="행정기간위원회">서비스지원</a></p>
+                                                <p><a href="#" class="decoration_none" title="지자체소식">자주묻는질문(FAQ)</a></p>
+                                                <p><a href="#" class="decoration_none" title="공모전">온라인 상담예약</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="guide-element">
+                                <a href="#"><span class="guide-bul"></span>처음오셨나요? <span class="guide-arrow"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main-wrap">
+            <section class="main-visual">
+                <div class="container">
+                    <div class="content">
+                        <div class="visual-box">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper swiper-main-photo">
+                                    <div class="swiperimg swiper-slide"></div>
+                                    <div class="swiperimg1 swiper-slide"></div>
+                                </div>
+                                <div class="swiper-navi">
+                                    <div class="swiper-pagination-main">
+                                        <span class="swiper-pagination-current">1</span>
+                                        / 
+                                        <span class="swiper-pagination-total">4</span>
+                                        <div class="swiper-button-prev ir_so">이전 슬라이드</div>
+                                        <button type="button" class="swiper-button-play ir_so">재생 버튼</button>
+                                        <button type="button" class="swiper-button-stop on ir_so">정지 버튼</button>
+                                        <div class="swiper-button-next ir_so" >다음 슬라이드</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="search-box only_pc">
+                                <div class="tit">자주찾는 검색</div>
+                                <div class="opction">가족관계증명서
+                                    <div class="button"></div>
+                                </div>
+                                <div class="input-search">
+                                    <form id="searchForm" name="searchForm" method="get">
+                                        <input type="text" class="main-input-search-pc" name="srhQuery" id="srhQuery" placeholder="찾으시는 서비스를 입력하세요" title="검색어 입력" autocomplete="off" style="font-size: 13px;">
+                                        <button type="submit" class="btn-search ir_so">검색버튼</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-box">
+                            <div class="login-wrap">
+                                <div class="login-info">
+                                    <p class="tit">내게 필요한 민원/생활/혜택 <br> 정보를 확인하세요.</p>
+                                    <a href="#" class="btn-login">로그인</a>
+                                </div>
+                                <div class="join-find-wrap">
+                                    <div class="left">
+                                        <a href="#">아이디찾기</a>
+                                        <span class="bar"></span>
+                                        <a href="#">비밀번호찾기</a>
+                                    </div>
+                                    <div class="right">
+                                        <a href="../04_javascript_jquery/javascript/input/form/index.html">회원가입</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="frequent-service">
+                <div class="container">
+                    <div class="contentBox">
+                        <div class="section-tit-box">
+                            <div class="tit-box">
+                                <h2 class="section-tit">자주찾는 서비스<span id="svcCntView">(<em>33</em>)</span></h2>
+                            </div>
+                            <div class="tit-link-box pc-only"><a href="#" class="a-link">서비스 전체보기</a></div>
+                        </div>
+                        <div class="frequent-swiper">
+                            <div class="frequent-swiper-wrap mySwiper ">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide-active">
+                                        <a href="#" class="value-03">
+                                            <span>신청</span>
+                                            <p class="txt">코로나19 <br>생활지원비</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next">
+                                        <a href="#" class="value-01">
+                                            <span>발급</span>
+                                            <p class="txt">주민등록등본 <br>(초본)</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="value-01">
+                                            <span>발급</span>
+                                            <p class="txt">건축물대장</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="value-01">
+                                            <span>발급</span>
+                                            <p class="txt">토지(임야) <br>대장</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="value-04">
+                                            <span>조회</span>
+                                            <p class="txt">가족관계 <br>증명서 
+                                                <img src="./img/ico-link.png" alt="link">
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="value-01">
+                                            <span>발급</span>
+                                            <p class="txt">격리통지서</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="value-01">
+                                            <span>발급</span>
+                                            <p class="txt">격리 해제 <br>사실 확인서</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="value-01">
+                                            <span>발급</span>
+                                            <p class="txt">코로나19 <br>예방접종 증명</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-pagination">
+                                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                                    <span class="swiper-pagination-bullet"></span>
+                                    <span class="swiper-pagination-bullet"></span>
+                                    <span class="swiper-pagination-bullet"></span>
+                                    <span class="swiper-pagination-bullet"></span>
+                                </div> -->
+                                <div class="swiper-button-prev3 swiper-button-disabled ir_so">이전 슬라이드</div>
+                                <div class="swiper-button-next3 ir_so">다음 슬라이드</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="onestop-contents">
+                <div class="container">
+                    <div class="content">
+                        <div class="onestop-service-box">
+                            <h2 class="section-tit">원스톱 서비스</h2>
+                            <div class="righten only-pc">
+                                <a href="#">중소벤처24 기업생애주기서비스<img src="./img/main-ico-newpage-blue.png" alt="링크이동"></a>
+                                <a href="#">국가보훈처 나만의 예우<img src="./img/main-ico-newpage-blue.png" alt="링크이동"></a>
+                            </div>
+                            <div class="onestop-swiper-wrap">
+                                <div class="onestop-swiper swiper-container-initialized swiper-container-horizontal">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide swiper-slide-active">
+                                            <a href="#">
+                                                <i class="iconset landing01"></i>
+                                                <p class="tit">전입신고+</p>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-next">
+                                            <a href="">
+                                                <i class="iconset landing02"></i>
+                                                <p class="tit">맘편한 임신</p>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <i class="iconset landing03"></i>
+                                                <p class="tit">행복출산</p>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <i class="iconset landing04"></i>
+                                                <p class="tit">온종일 돌봄</p>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <i class="iconset landing05"></i>
+                                                <p class="tit">꿈청소년</p>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <i class="iconset landing06"></i>
+                                                <p class="tit">취업서류</p>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <i class="iconset landing07"></i>
+                                                <p class="tit">노후생활</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination swiper-pagination-fraction swiper-pagination-bullets">
+                                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                                        <span class="swiper-pagination-bullet"></span>
+                                    </div>
+                                    <div class="swiper-button-prev4 swiper-button-disabled ir_so">이전 슬라이드</div>
+                                    <div class="swiper-button-next4 ir_so">다음 슬라이드</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notice-box">
+                            <h2 class="section-tit">공지사항</h2>
+                            <a href="#" class="btn-more ir_so">공지사항 더보기</a>
+                            <ul class="notice-list">
+                                <li>
+                                    <a href="#" class="ellipsis">
+                                        <span class="notice-tit">소득확인증명서(청년우대형주택종합저축 가입용) 발급서비스 중지</span>
+                                        <span class="notice-date">2022.11.11.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ellipsis">
+                                        <span class="notice-tit">정부24 시스템 개선사항 안내('22.11.11)</span>
+                                        <span class="notice-date">2022.11.11.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ellipsis">
+                                        <span class="notice-tit">보조금24 이용후기 이벤트 당첨 안내</span>
+                                        <span class="notice-date">2022.11.09.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ellipsis">
+                                        <span class="notice-tit">정부24 사칭 피싱전화 및 문자 주의 요망</span>
+                                        <span class="notice-date">2022.11.09.</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ellipsis">
+                                        <span class="notice-tit">경찰청 운전경력증명 서비스 지연 안내</span>
+                                        <span class="notice-date">2022.11.07.</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subsidy-contents">
+                <div class="container">
+                    <div class="content">
+                        <div class="subsidy-box">
+                            <div class="tit-box">
+                                <h2 class="section-tit ">보조금24</h2>
+                                <div class="subsidy-txt pc-only">
+                                    <p class="txt">나와 가족이 받을 수 있는 <br> 정부혜택을 확인할 수 있어요</p>
+                                    <a href="#" class="a-link">로그인하고 확인하기
+                                        <img src="./img/ico-link-blue-small.png" alt="화살표">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="subsidy-service">
+                                <div class="main-subsidy">
+                                    <div class="main-subsidy-box">
+                                        <p class="subsidy-tit">
+                                            이용방법은 <br>좌우로 넘겨서 <br>확인하세요
+                                        </p>
+                                        <p class="a-link">상세보기 <img src="./img/ico-link-black.png" alt="화살표"></p>
+                                        <div class="swiper-pagination swiper-pagination-fraction">
+                                            <span class="swiper-pagination-current">1</span>
+                                            /
+                                            <span class="swiper-pagination-total">6</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev9 ir_so">이전 슬라이드</div>
+                                    <div class="swiper-button-next9 ir_so">다음 슬라이드</div>
+                                </div>
+                                <div class="subsidy-inner-box">
+                                    <a href="#" class="subsidy-check">
+                                        <span class="ico-area">
+                                            <i class="ico ico-subsidy-check"></i>
+                                        </span>
+                                        <p class="subsidy-tit">
+                                            정부가 제공하는 <br>전체 혜택 확인
+                                        </p>
+                                    </a>
+                                    <a href="#" class="subsidy-search">
+                                        <span class="ico-area">
+                                            <i class="ico ico-subsidy-search"></i>
+                                        </span>
+                                        <p class="subsidy-tit">
+                                            간편하게 <br>찾기
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-box">
+                            <div class="block">
+                                <img src="./img/main-ico-mydata.png" alt="">
+                                <a href="#" class="link mydata">
+                                    <p class="ico-tit">마이데이터</p>
+                                </a>
+                            </div>
+                            <div class="block gubbi">
+                                <img src="./img/main-ico-gubbi.png" alt="">
+                                <a href="#" class="link gubbi">
+                                    <p class="ico-tit">국민비서구삐</p>
+                                </a>
+                            </div>
+                            <div class="block block01">
+                                <img src="./img/main-ico-wallet.png" class="block01-img1" alt="">
+                                <a href="#" class="link wallet">
+                                    <p class="ico-tit ico-tit1">전자문서지갑</p>
+                                </a>
+                            </div>
+                            <div class="block block01">
+                                <img src="./img/main-ico-location.png" class="block01-img2" alt="">
+                                <a href="#" class="link location">
+                                    <p class="ico-tit ico-tit2">돌봄시설위치</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news-contents">
+                <div class="container">
+                    <div class="content">
+                        <div class="block news-tab-box1">
+                            <div class="tab-area tab-layer main-tab-v1">
+                                <div class="tablist">
+                                    <a href="#" class="first">이 달의 영상뉴스</a>
+                                    <a href="#" class="last">공모전</a>
+                                </div>
+                                <div class="tab-cont">
+                                    <img src="./img/img_news_202210.png" alt="뉴스">
+                                    <span class="img_tag"></span>
+                                    <p>[2022] 10월의 영상뉴스</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block news-tab-box2">
+                            <div class="tab-area tab-layer main-tab-v2">
+                                <div class="tablist">
+                                    <a href="#">정책뉴스</a>
+                                    <a href="#">연구보고서</a>
+                                    <a href="#">간행물</a>
+                                    <a href="#">정책자료 </a>
+                                    <a href="#" class="btn-more"><span></span></a>
+                                </div>
+                                <div class="tab-cont">
+                                    <ul class="news-list">
+                                        <li><a href="#">
+                                            <p class="tit">2022 개발협력주간 행사 개최</p>
+                                            <p class="date">2022.11.18</p>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <p class="tit">[보도자료] 개발협력주간(11.21.(월)~11.25.(금))</p>
+                                            <p class="date">2022.11.18</p>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <p class="tit">노사발전재단‘중부지사’개소</p>
+                                            <p class="date">2022.11.18</p>
+                                        </a></li>
+                                        <li><a href="#">
+                                            <p class="tit">이종호 장관, 중소 제조 등 산업계 사이버 위협 대응체계 점검 간담회 개최</p>
+                                            <p class="date">2022.11.18</p>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-box">
+                            <div id="map" style="width:400px; height:100%; border-radius: 20px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="channel-contents">
+                <div class="container">
+                    <div class="title-txt">
+                        <h2 class="txt">국민소통채널</h2>
+                        <div class="channel-slide-wrap">
+                            <div class="channel-slide-new swiper-container-initialized swiper-container-horizontal">
+                                <ul class="sl-wrapper ">
+                                    <li class="item">
+                                        <a href="#"><img src="./img/img-channel-test2.jpg" alt="고용복지센터"></a>
+                                    </li>
+                                    <li class="item swiper-slide swiper-slide-next">
+                                        <a href=""><img src="./img/img_channel20.png" alt="대한민국 법원-전자가족관계등록시스템"></a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href=""><img src="./img/img_channel3.jpg" alt="문서24"></a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href=""><img src="./img/1.jpg" alt="대한민국 온국민소통"></a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href=""><img src="./img/11.png" alt="찾기쉬운 생활법령정보"></a>
+                                    </li>
+                                    <li class="item swiper-slide none1">
+                                        <a href=""><img src="./img/3.jpg" alt="안전 Dream 아동·여성·장애인 경찰지원센터"></a>
+                                    </li>
+                                    <li class="item swiper-slide none1">
+                                        <a href=""><img src="./img/4.jpg" alt="open.go.kr 정보공개"></a>
+                                    </li>
+                                    <li class="item swiper-slide none1">
+                                        <a href=""><img src="./img/5.png" alt="적극행정"></a>
+                                    </li>
+                                    <li class="item swiper-slide none1">
+                                        <a href=""><img src="./img/6.jpg" alt="국민신문고"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="swiper-button-prev10 sr-only-text swiper-button-disabled ir_so">이전 슬라이드</button>
+                            <button class="swiper-button-next10 sr-only-text ir_so">다음 슬라이드</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer-element">
+            <div class="top-element">
+                <div class="container">
+                    <div class="fl">
+                        <ul class="footer-menu">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                            <li><a href="#">담당자연락처</a></li>
+                            <li><a href="#">개선의견수렴</a></li>
+                            <li><a href="#">open API</a></li>
+                        </ul>
+                    </div>
+                    <div class="fr">
+                        <ul class="footer-sns">
+                            <li>
+                                <a href="#" title="정부24 네이버 블로그-새창" class="blog">
+                                    <span class="hd-element ir_so">블로그</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 트위터-새창" class="tw">
+                                    <span class="hd-element ir_so">트위터</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 페이스북-새창" class="fb">
+                                    <span class="hd-element ir_so">페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 카카오스토리-새창" class="ks">
+                                    <span class="hd-element ir_so">카카오스토리   </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 유투브-새창" class="yt">
+                                    <span class="hd-element ir_so">유투브</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="body-element">
+                <div class="container">
+                   <div class="footer_box">
+                        <p class="footer-logo"><a href="#"><img src="./img/img-footer-logo (1).png" alt="logo"></a></p>
+                        <p class="footer-infor">정부24 콜센터 <b>1588-2188</b>, 02-3703-2500 (09:00 ~ 18:00 평일) <br>
+                            <b>※ 콜센터 내선 번호 안내</b><br>
+                            <b>[1번]</b> 주민등록등초본, 건축물대장, 토지대장 관련<br class="mo-only"> <b>[2번]</b> 민원 신청 및 결과 관련 <br class="mo-only"><b>[3번]</b> 신청 완료 민원 출력 관련 <br>
+                            <b>[4번]</b> 회원 가입, 로그인 관련 <br class="mo-only"><b>[5번]</b> 보조금24, 정부24 이용 관련<br><br>
+                            정부민원안내콜센터 국번없이 110 (365일 24시간)<br> 
+                            Copyright &copy; Ministry of the Interior and Safety. All Rights Reserved.</p>
+                        <p class="logo_wa"><a href="#"><img src="./img/logo_wa (1).png" alt="logo"></a></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapCenter = new kakao.maps.LatLng(37.268054,127.005436), // 지도의 중심좌표
+        mapOption = {
+            center: mapCenter, // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var content = '<div class="overlay_info">';
+        content += '    <a href="https://place.map.kakao.com/17600274" target="_blank"><strong>더휴먼아카데미</strong></a>';
+        content += '    <div class="desc">';
+        content += '        <img src="https://lh5.googleusercontent.com/p/AF1QipOx_BSMNJeWMPTc8oR0SwGSyAlQKYaQUAR-p6g=w408-h273-k-no"  style="width:50px; height:50px; alt="">';
+        content += '        <span class="address">경기도 수원시 팔달구 갓매산로 38 다성빌딩 3층</span>';
+        content += '    </div>';
+        content += '</div>';
+
+        // 커스텀 오버레이가 표시될 위치입니다 
+        var position = new kakao.maps.LatLng(37.268054,127.005436);
+
+        // 커스텀 오버레이를 생성합니다
+        var mapCustomOverlay = new kakao.maps.CustomOverlay({
+            position: position,
+            content: content,
+            xAnchor: 0.5, // 커스텀 오버레이의 x축 위치입니다. 1에 가까울수록 왼쪽에 위치합니다. 기본값은 0.5 입니다
+            yAnchor: 1.1 // 커스텀 오버레이의 y축 위치입니다. 1에 가까울수록 위쪽에 위치합니다. 기본값은 0.5 입니다
+        });
+
+        // 커스텀 오버레이를 지도에 표시합니다
+        mapCustomOverlay.setMap(map);
+
+        var swiper = new Swiper('.swiper-container',{
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                        });
+
+	</script>
+</body>
+</html>

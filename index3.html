@@ -1,0 +1,720 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>정부24 | 정책정보</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='정부24 | 정책정보'>
+	<meta name='Subject' content='정부24 | 정책정보 클론 코딩'>
+	<meta name='Keywords' content='html5, css3, 웹표준, 관공소, 정부24 | 정책정보 '>
+	<meta name='Author' content='jioh'>
+	<meta name='Publisher' content='jioh'>
+	<meta name='Description' content='웹접근성, 웹표준을 준수한 정부24 | 정책정보 클론 코딩입니다.'>
+	<meta name='Author-Date' content='2022/12/12'>
+	<meta name='Robots' content='index,follow'>
+
+	<link rel='stylesheet' href='./css/reset.css'>
+	<link rel='stylesheet' href='./css/style3.css'>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="gov_top_info">
+                <div class="container">
+                    <p>이 누리집은 대한민국 공식 전자정부 누리집입니다.</p>
+                </div>
+            </div>
+            <div class="top-area">
+                <div class="container">
+                    <div class="toggle-group">
+                        <a href="#" class="toggle-btn" title="For Foreigners">For Foreigners</a>
+                        <ul class="toggle-target">
+                            <li><a href="#" title="새창열림">한국어</a></li>
+                            <li><a href="#" title="새창열림">ENG</a></li>
+                            <li><a href="#" title="새창열림">中文</a></li>
+                        </ul>
+                        <ul class="left-element">
+                            <li><a href="#" target="_blank" title="새창열림" class="kid">어린이</a></li>
+                        </ul>
+                    </div>
+                    <ul class="right-element">
+                        <li><a href="#" title="새창열림">로그인</a></li>
+                        <li><a href="#" title="새창열림">회원가입</a></li>
+                        <li><a href="#" title="새창열림">정부24소개</a></li>
+                        <li><a href="#" title="새창열림">누리집 안내지도</a></li>
+                        <li class="none">
+                            <span>화면크기</span>
+                            <span class="zoom-element">
+                                <span class="zoom-btn out"></span>
+                                <span class="zoom-text">
+                                    <a href="#" title="화면확대축소 초기화">100%</a>
+                                </span>
+                                <span class="zoom-btn in"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="body-area">
+                <div class="gnb-element">
+                    <div class="container">
+                        <h1 class="ir_so">
+                            <a href="./index.html" title="logo">
+                                <img src="./img/img-gov-logo.png" alt="logo">
+                            </a>
+                        </h1>
+                        <div class="gnb-mobile-element">
+                            <ul class="gnb-area">
+                                <li><a href="./index1.html" title="서비스" class="decoration_none" >서비스<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2><span class="h2_left">서비스</span></h2>                             
+                                            </div>
+                                            <div class="menu-list">
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="민원신청"   class="decoration_none">민원신청</a></div>
+                                                    <p><a href="#" title="신청·조회·발급"  class="decoration_none">신청·조회·발급</a></p>   
+                                                </div>                                    
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="서비스신청"  class="decoration_none">서비스신청</a></div>
+                                                    <p><a href="#" title="원스톱/생애주기/꾸러미 서비스"  class="decoration_none">원스톱/생애주기/꾸러미 서비스</a></p>
+                                                    <p><a href="#" title="연령/대상별 서비스"  class="decoration_none">연령/대상별 서비스</a></p>
+                                                    <p><a href="#" title="분야별 서비스"  class="decoration_none">분야별 서비스</a></p>
+                                                    <p><a href="#" title="기업단체 서비스"  class="decoration_none">기업단체 서비스</a></p>
+                                                    <p><a href="#" title="외국인 서비스"  class="decoration_none">외국인 서비스</a></p>
+                                                </div>
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="간편 확인/안내"  class="decoration_none">간편 확인/안내</a></div>
+                                                    <p><a href="#" title="사실/진위확인"  class="decoration_none">사실/진위확인</a></p>
+                                                    <p><a href="#" title="행정정보공동이용"  class="decoration_none">행정정보공동이용<br>(e하나로민원)</a></p>
+                                                    <p><a href="#" title="공공자원공유"  class="decoration_none">공공자원공유</a></p>
+                                                    <p><a href="#" title="돌봄시설 등 위치 찾기"  class="decoration_none">돌봄시설 등 위치 찾기</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                <li><a href="./index2.html" title="보조금24" class="decoration_none" >보조금24<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo2"><span>보조금24</span></h2>                                               
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" title="나의 혜택" class="decoration_none">나의 혜택</a></p>
+                                                <p><a href="#" title="가족 구성" class="decoration_none">가족 구성</a></p>
+                                                <p><a href="#" title="간편 찾기" class="decoration_none">간편 찾기</a></p>
+                                                <p><a href="#" title="전체 혜택" class="decoration_none">전체 혜택</a></p>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </li>
+                                <li><a href="#" title="정책정보" class="decoration_none" id="block">정책정보<span   style="display: block;"></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo3"><span>정책정보</span></h2>                                            
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" class="decoration_none" title="분야별 정책정보">분야별 정책정보</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 조직도">정부/지자체 조직도</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 운영누리집">정부/지자체 운영누리집</a></p>
+                                                <p><a href="#" class="decoration_none" title="행정기간위원회">행정기간위원회</a></p>
+                                                <p><a href="#" class="decoration_none" title="지자체소식">지자체소식</a></p>
+                                                <p><a href="#" class="decoration_none" title="공모전">공모전</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="./index4.html" title="고객센터" class="decoration_none">고객센터<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo4"><span>고객센터</span></h2>
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" class="decoration_none" title="분야별 정책정보">정부24 이용방법</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 조직도">공지사항</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 운영누리집">자료실</a></p>
+                                                <p><a href="#" class="decoration_none" title="행정기간위원회">서비스지원</a></p>
+                                                <p><a href="#" class="decoration_none" title="지자체소식">자주묻는질문(FAQ)</a></p>
+                                                <p><a href="#" class="decoration_none" title="공모전">온라인 상담예약</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="renew-search">
+                                <div class="search">
+                                    <input type="text" name="srhQuery" id="srhQueryForHeader">
+                                    <button type="submit" id="focusout"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id="section_top">
+                <div class="container2">
+                    <div class="breadclumbs">
+                        <ul class="bc_list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">보조금24</a></li>
+                            <li><a href="#">분야별 정책정보</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <main>  
+                <div class="main_top">
+                    <div class="container2">
+                        <div class="pageCont">
+                            <h1>분야별 정책정보</h1>
+                            <ul class="page_util">
+                                <li class="facebook">
+                                    <a href="#"  class="ir_so"><span>facebook</span></a>
+                                </li>
+                                <li class="twitter">
+                                    <a href="#" class="ir_so"><span>twitter</span></a>
+                                </li>
+                                <li class="linkcv">
+                                    <a href="#" class="ir_so"><span>주소 복사하기</span></a>
+                                </li>
+                                <li class="iconBox print">
+                                    <a href="#" class="ir_so"><span>프린트하기</span></a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentsWrap policy_cont renew2019">
+                    <div class="container2">
+                        <div class="contents">
+                            <div class="cont_inner">
+                                <form action="#" id="policyInfoVo" name="policyInfoVo" method="get">
+                                    <div class="search_box_multi_wrap">
+                                        <div class="form_input_group hasDl">
+                                            <dl>
+                                                <dt>
+                                                    <label for="blgCd">분류</label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="layout_col col3">
+                                                        <div class="sch_wrap col">
+                                                            <select name="blgCd" title="대분류" id="blgCd">
+                                                                <option value>대분류 전체</option>
+                                                                <option value="1">공공질서 및 안전</option>
+                                                                <option value="2">과학기술</option>
+                                                                <option value="3">교육</option>
+                                                                <option value="4">교통 및 물류</option>
+                                                                <option value="5">국방</option>
+                                                                <option value="6">농림</option>
+                                                                <option value="7">문화체육관광</option>
+                                                                <option value="8">보건</option>
+                                                                <option value="9">사회복지</option>
+                                                                <option value="10">산업·통상·중소기업</option>
+                                                                <option value="11">일반공공행정</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="sch_wrap col">
+                                                            <select name="slgCd" title="중분류" id="slgCd">
+                                                                <option value>중분류 전체</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="form_input_group hasDl">
+                                            <dl>
+                                                <dt>
+                                                    <label for="srchOrgGroup">기관</label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="layout_col col3">
+                                                        <div class="sch_wrap col">
+                                                            <select name="srchOrgGroup" id="srchOrgGroup" title="기관분류">
+                                                                <option value>기관분류 선택</option>
+                                                                <option value="12">정부기관</option>
+                                                                <option value="13">소속기관</option>
+                                                                <option value="14">공공기관</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="sch_wrap col">
+                                                            <select name="srchOriginOrg" id="srchOriginOrg" title="제공기관">
+                                                                <option value>제공기관 선택</option>
+                                                                <option value="15">경제인문사회연구회(NKIS)</option>
+                                                                <option value="16">경제인문사회연구회</option>
+                                                                <option value="17">경찰청</option>
+                                                                <option value="18">고용노동부</option>
+                                                                <option value="19">과학기술정보통신부</option>
+                                                                <option value="20">과학기술정책연구원</option>
+                                                                <option value="21">공정거래위원회</option>
+                                                                <option value="22">교육부</option>
+                                                                <option value="23">국가과학기술자문회의</option>
+                                                                <option value="24">국가기록원</option>
+                                                                <option value="25">국가기술표준원</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="form_input_group hasDl">
+                                            <dl>
+                                                <dt>
+                                                    <label for="srchPeriodOption">기간</label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="layout_col col3">
+                                                        <div class="sch_wrap col">
+                                                            <select name="srchPeriodOption" id="srchPeriodOption" title="검색 기간">
+                                                                <option value="6months">최근 6개월</option>
+                                                                <option value="1years">최근 1년</option>
+                                                                <option value="3years">최근 3년</option>
+                                                                <option value="all">전체</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="sch_wrap col colspan2"></div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="form_input_group hasDl">
+                                            <dl>
+                                                <dt>
+                                                    <label for="searchField">검색</label>
+                                                </dt>
+                                                <dd>
+                                                    <div class="layout_col col3">
+                                                        <div class="sch_wrap col">
+                                                            <select name="searchField" id="searchField">
+                                                                <option value="26">제목+본문</option>
+                                                                <option value="27">제목</option>
+                                                                <option value="28">본문</option>
+                                                                <option value="29">전체</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="sch_wrap col colspan2">
+                                                            <div class="layout_col auto">
+                                                                <div class="col colspan2">
+                                                                    <div class="search_keyword_reset_wrap">
+                                                                        <input type="text" name="srchTxt" class="input_search_keyword" placeholder="검색어를 입력해주세요.">
+                                                                        <button type="button" class="btn_search">검색</button>
+                                                                        <button type="button" class="btn_reset">초기화</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="check_guide_wrap">
+                                                                        <input type="checkbox" id="research" name="research" class="custorm">
+                                                                        <label for="research">결과 내 재검색</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="unifiedSch_lst unifiedSch3">
+                            <div class="title_box_tab five_tab">
+                                <ul class="tabnav wordwrap">
+                                    <li class="active">
+                                        <a href="#">
+                                            <span class="dt">전체 </span>
+                                            <span class="dd"><strong class="sum">(84,712)</strong></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="dt">정책뉴스</span>
+                                            <span class="dd"><strong class="sum">(64,144)</strong></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="dt">연구보고서</span>
+                                            <span class="dd"><strong class="sum">(1,571)</strong></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="dt">간행물</span>
+                                            <span class="dd"><strong class="sum">(17,857)</strong></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="dt">정책자료</span>
+                                            <span class="dd"><strong class="sum">(1,140)</strong></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="sorting_area">
+                                    <span class="movie_link">
+                                        <a href="#" id="btnVodAll">
+                                            <span></span>
+                                            동영상 모아보기
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="sch_area">
+                                <div class="title_search_result">
+                                    <dl>
+                                        <dt>정책뉴스</dt>
+                                        <dd><strong class="sum">64,144</strong>건</dd>
+                                    </dl>
+                                </div>
+                                <ul>
+                                    <li class="list_img">
+                                        <div class="left_cover">
+                                            <div class="movie_thumb">
+                                                <img src="./policy/f1bdeab69adccc3ebe389654c3d3005d.jpg" alt="photo1">
+                                            </div>
+                                        </div>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">16~25일 연말 소비촉진 '한겨울의 동행축제' 열린다</a>
+                                                </dt>
+                                                <dd>연말 소비와 중소·소상공인 상품 판매 촉진을 위한 ‘한겨울의 동행축제 윈·윈터 페스티벌’이 오는16일부터 25일까지 10일간 열린다.  중소벤처기업부는 13일 이 같은 내용의 ‘한겨울의 동행축제 윈·윈터 페스티벌’ 추진계획을 발표했다.  올해로 4회째를 맞는 이번 행사는 ... </dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>KOREA.KR / 중소벤처기업부</span>
+                                                <span>2022-12-13</span>
+                                                <span class="kind_gray">일반공공행정 >재정·금융</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list_img">
+                                        <div class="left_cover">
+                                            <div class="movie_thumb">
+                                                <img src="./policy/71cdd6678b0c3a6f250d0e6c118c5408.jpg" alt="photo2">
+                                            </div>
+                                        </div>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">특수·전문대학원생도 내년부터 취업후상환 학자금대출 가능</a>
+                                                </dt>
+                                                <dd>취업 후 상환 학자금대출 대상이 내년 1학기부터 특수·전문대학원생까지 확대된다. 이에 따라 학자금지원 4구간 및 만 40세 이하 대학원생 7000여 명이 추가로 혜택을 볼 수 있게 됐다.  교육부는 13일 국무회의에서 이같은 내용의 ‘취업 후 학자금 상환 특별법 시행령 일부개정령안’이 심의·의결됐다고 밝혔다. ... </dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>KOREA.KR / 교육부</span>
+                                                <span>2022-12-13</span>
+                                                <span class="kind_gray">교육 >고등교육</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">한미·한일·한미일 북핵수석대표 협의(12.12-13) 개최 </a>
+                                                </dt>
+                                                <dd>□ 김건 한반도평화교섭본부장은 12.12(월)-13(화) 인도네시아 자카르타에서 성 김(Sung Kim) 미국 대북특별대표 및 후나코시 다케히로(船越健裕) 일본 외무성 아시아·대양주국장과 한미·한미일 북핵 수석대표 협의를 가졌다.  ※ 이에 더해, 12.13(화) 오후 한일 북핵 수석대표 협의 개최 예정  □ 3국 북핵 수석대표는 ... </dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>KOREA.KR / 외교부</span>
+                                                <span>2022-12-13</span>
+                                                <span class="kind_gray">통일·외교 >외교</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="more_area">
+                                    <a href="#" class="btn_more" title="정책뉴스 검색결과 더 보기">
+                                        <span>검색결과 더 보기</span>
+                                    </a>
+                                </div>   
+                            </div>
+                            <div class="sch_area">
+                                <div class="title_search_result">
+                                    <dl>
+                                        <dt>연구보고서</dt>
+                                        <dd><strong class="sum">1,571</strong> 건</dd>
+                                    </dl>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">월간 연금이슈 & 동향분석(제90호)</a>
+                                                </dt>
+                                                <dd>&nbsp;</dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>국민연금공단</span>
+                                                <span>2022-12-12</span>
+                                                <span class="kind_gray">사회복지 > 공적연금</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">대만 식약서, 일본산 수입식품 방사능 검사 결과(2022년 12월 12일)</a>
+                                                </dt>
+                                                <dd>1. 2022년 2월 21일부터, 일본 현지 유통제한 품목 및 후쿠시마·이바라키·도치키·군마·지바 등 5개현에서 생산·제조된 야생조수육, 버섯류, 오가피의 수입 검사를 중단함.  9대 식품(신선·냉장 채소 및 과일, 냉동 채소 및 과일, 활신선·냉장 수산물, 냉동 수산물, 유제품, 영유아식품, 광천수 또는 음용수, 해초류, 차(茶)류)는 리스크 정도에 따른... </dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>식품안전정보원</span>
+                                                <span>2022-12-12</span>
+                                                <span class="kind_gray">보건 > 식품의약안전</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">유럽연합, 특정 식품 중 과불화화합물(PFAS)의 최대기준 개정 고시</a>
+                                                </dt>
+                                                <dd>유럽연합 집행위원회는 2022년 12월 8일, 규정(EU) 2022/2388을 통해 특정 식품 중 과불화화합물(perfluoroalkyl substances, PFAS)의 최대기준(Maximum levels, ML)에 관하여 「식품 중 오염물질의 최대기준에 관한 규정(EC) 1881/2006」을 개정함.  [배경]  (2) 과불화옥탄술폰산(PFOS), 과불... </dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>식품안전정보원</span>
+                                                <span>2022-12-12</span>
+                                                <span class="kind_gray">보건 > 식품의약안전</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="more_area">
+                                    <a href="#" class="btn_more" title="연구보고서 검색결과 더 보기">
+                                        <span>검색결과 더 보기</span>
+                                    </a>
+                                </div>   
+                            </div>
+                            <div class="sch_area sch_area1">
+                                <div class="title_search_result">
+                                    <dl>
+                                        <dt>간행물</dt>
+                                        <dd><strong class="sum">17,857</strong> 건</dd>
+                                    </dl>
+                                </div>
+                                <ul class="list_public_area">
+                                    <li class="list_public">
+                                        <div class="left_cover"><img src="./policy/img_publi_02.png" alt="photo3"></div>
+                                        <div class="right_detail public_line">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">국제규격 S1000D 발전을 위한 협력관계 구축</a>
+                                                </dt>
+                                                <dd>
+                                                    <div class="sorting_area">
+                                                        <span>제공기관 : 방위사업청</span>
+                                                        <span>등록일 : <em>2022-12-14</em></span>
+                                                        <span class="kind_gray">국방 > 전력유지</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="list_public">
+                                        <div class="left_cover"><img src="./policy/img_publi_03.png" alt="photo4"></div>
+                                        <div class="right_detail public_line">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">무기체계 국외구매 시 시행되는 국제협상이란?</a>
+                                                </dt>
+                                                <dd>
+                                                    <div class="sorting_area">
+                                                        <span>제공기관 : 방위사업청</span>
+                                                        <span>등록일 : <em>2022-12-14</em></span>
+                                                        <span class="kind_gray">국방 > 전력유지</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="list_public">
+                                        <div class="left_cover"><img src="./policy/PCY_202212141118218531_0_cover.jpg" alt="photo5"></div>
+                                        <div class="right_detail public_line">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">거주가치 중심의 민간주도 주택공급방식 사업모델 제안</a>
+                                                </dt>
+                                                <dd>
+                                                    <div class="sorting_area">
+                                                        <span>제공기관 : 국립세종도서관(GZONE.KR)</span>
+                                                        <span>원문출처 : <em>건축공간연구원</em></span>
+                                                        <span>등록일 : <em>2022-12-14</em></span>
+                                                        <span class="kind_gray kind_gray1">사회복지 > 주택</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="list_public">
+                                        <div class="left_cover"><img src="./policy/PCY_202212141047594751_0_cover.jpg" alt="photo6"></div>
+                                        <div class="right_detail public_line">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">「경관법」 실효성 제고를 위한 제도 개선 방향</a>
+                                                </dt>
+                                                <dd>
+                                                    <div class="sorting_area">
+                                                        <span>제공기관 : 국립세종도서관(GZONE.KR)</span>
+                                                        <span>원문출처 : <em>건축공간연구원</em></span>
+                                                        <span>등록일 : <em>2022-12-14</em></span>
+                                                        <span class="kind_gray kind_gray1">지역개발 > 지역 및 도시</span>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="more_area">
+                                    <a href="#" class="btn_more" title="간행물 검색결과 더 보기">
+                                        <span>검색결과 더 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sch_area sch_area2">
+                                <div class="title_search_result">
+                                    <dl>
+                                        <dt>정책자료</dt>
+                                        <dd><strong class="sum">1,140</strong> 건</dd>
+                                    </dl>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">일일 금융시장 동향[12.12일]</a>
+                                                </dt>
+                                                <dd>* 첨부파일 참조(17시 기준) </dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>금융감독원</span>
+                                                <span>2022-12-12</span>
+                                                <span class="kind_gray">재정·세제·금융 > 금융</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">(2022년 11월 기준) 문화체육관광부 소관 행정위원회 설치 현황 및 활동내역서)</a>
+                                                </dt>
+                                                <dd>2022년 11월 기준, 문화체육관광부 소관 행정위원회 설치 현황 및 활동내역서 입니다. </dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>문화체육관광부</span>
+                                                <span>2022-12-12</span>
+                                                <span class="kind_gray">문화체육관광 > 문화체육관광일반</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="right_detail">
+                                            <dl>
+                                                <dt>
+                                                    <a href="#">주간 금융시장 주요 지표[12.5~12.9일]</a>
+                                                </dt>
+                                                <dd>* 첨부파일 참조 </dd>
+                                            </dl>
+                                            <div class="sorting_area">
+                                                <span>금융감독원</span>
+                                                <span>2022-12-12</span>
+                                                <span class="kind_gray">재정·세제·금융 > 금융</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="more_area">
+                                    <a href="#" class="btn_more" title="정책자료 검색결과 더 보기">
+                                        <span>검색결과 더 보기</span>
+                                    </a>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <div class="footer-element">
+            <div class="top-element">
+                <div class="container">
+                    <div class="fl">
+                        <ul class="footer-menu">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                            <li><a href="#">담당자연락처</a></li>
+                            <li><a href="#">개선의견수렴</a></li>
+                            <li><a href="#">open API</a></li>
+                        </ul>
+                    </div>
+                    <div class="fr">
+                        <ul class="footer-sns">
+                            <li>
+                                <a href="#" title="정부24 네이버 블로그-새창" class="blog">
+                                    <span class="hd-element ir_so">블로그</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 트위터-새창" class="tw">
+                                    <span class="hd-element ir_so">트위터</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 페이스북-새창" class="fb">
+                                    <span class="hd-element ir_so">페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 카카오스토리-새창" class="ks">
+                                    <span class="hd-element ir_so">카카오스토리   </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 유투브-새창" class="yt">
+                                    <span class="hd-element ir_so">유투브</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="body-element">
+                <div class="container">
+                   <div class="footer_box">
+                        <p class="footer-logo"><a href="#"><img src="./img/img-footer-logo (1).png" alt="logo"></a></p>
+                        <p class="footer-infor">정부24 콜센터 <b>1588-2188</b>, 02-3703-2500 (09:00 ~ 18:00 평일) <br>
+                            <b>※ 콜센터 내선 번호 안내</b><br>
+                            <b>[1번]</b> 주민등록등초본,    축물대장, 토지대장 관련<br class="mo-only"> <b>[2번]</b> 민원 신청 및 결과 관련 <br class="mo-only"><b>[3번]</b> 신청 완료 민원 출력 관련 <br>
+                            <b>[4번]</b> 회원 가입, 로그인 관련 <br class="mo-only"><b>[5번]</b> 보조금24, 정부24 이용 관련<br><br>
+                            정부민원안내콜센터 국번없이 110 (365일 24시간)<br> 
+                            Copyright &copy; Ministry of the Interior and Safety. All Rights Reserved.</p>
+                        <p class="logo_wa"><a href="#"><img src="./img/logo_wa (1).png" alt="logo"></a></p>
+                        <div class="footer_top_btn">
+                            <a href="#">TOP</a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

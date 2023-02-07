@@ -1,0 +1,944 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>정부24 | 고객센터</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='정부24 | 고객센터'>
+	<meta name='Subject' content='정부24 | 고객센터 클론 코딩'>
+	<meta name='Keywords' content='html5, css3, 웹표준, 관공소, 정부24 | 고객센터 '>
+	<meta name='Author' content='jioh'>
+	<meta name='Publisher' content='jioh'>
+	<meta name='Description' content='웹접근성, 웹표준을 준수한 정부24 | 고객센터 클론 코딩입니다.'>
+	<meta name='Author-Date' content='2022/12/14'>
+	<meta name='Robots' content='index,follow'>
+
+	<link rel='stylesheet' href='./css/reset.css'>
+	<link rel='stylesheet' href='./css/style4.css'>
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="./js/script4.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="gov_top_info">
+                <div class="container">
+                    <p>이 누리집은 대한민국 공식 전자정부 누리집입니다.</p>
+                </div>
+            </div>
+            <div class="top-area">
+                <div class="container">
+                    <div class="toggle-group">
+                        <a href="#" class="toggle-btn" title="For Foreigners">For Foreigners</a>
+                        <ul class="toggle-target">
+                            <li><a href="#" title="새창열림">한국어</a></li>
+                            <li><a href="#" title="새창열림">ENG</a></li>
+                            <li><a href="#" title="새창열림">中文</a></li>
+                        </ul>
+                        <ul class="left-element">
+                            <li><a href="#" target="_blank" title="새창열림" class="kid">어린이</a></li>
+                        </ul>
+                    </div>
+                    <ul class="right-element">
+                        <li><a href="#" title="새창열림">로그인</a></li>
+                        <li><a href="#" title="새창열림">회원가입</a></li>
+                        <li><a href="#" title="새창열림">정부24소개</a></li>
+                        <li><a href="#" title="새창열림">누리집 안내지도</a></li>
+                        <li class="none">
+                            <span>화면크기</span>
+                            <span class="zoom-element">
+                                <span class="zoom-btn out"></span>
+                                <span class="zoom-text">
+                                    <a href="#" title="화면확대축소 초기화">100%</a>
+                                </span>
+                                <span class="zoom-btn in"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="body-area">
+                <div class="gnb-element">
+                    <div class="container">
+                        <h1 class="ir_so">
+                            <a href="./index.html" title="logo">
+                                <img src="./img/img-gov-logo.png" alt="logo">
+                            </a>
+                        </h1>
+                        <div class="gnb-mobile-element">
+                            <ul class="gnb-area">
+                                <li><a href="./index1.html" title="서비스" class="decoration_none" >서비스<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2><span class="h2_left">서비스</span></h2>                             
+                                            </div>
+                                            <div class="menu-list">
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="민원신청"   class="decoration_none">민원신청</a></div>
+                                                    <p><a href="#" title="신청·조회·발급"  class="decoration_none">신청·조회·발급</a></p>   
+                                                </div>                                    
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="서비스신청"  class="decoration_none">서비스신청</a></div>
+                                                    <p><a href="#" title="원스톱/생애주기/꾸러미 서비스"  class="decoration_none">원스톱/생애주기/꾸러미 서비스</a></p>
+                                                    <p><a href="#" title="연령/대상별 서비스"  class="decoration_none">연령/대상별 서비스</a></p>
+                                                    <p><a href="#" title="분야별 서비스"  class="decoration_none">분야별 서비스</a></p>
+                                                    <p><a href="#" title="기업단체 서비스"  class="decoration_none">기업단체 서비스</a></p>
+                                                    <p><a href="#" title="외국인 서비스"  class="decoration_none">외국인 서비스</a></p>
+                                                </div>
+                                                <div class="menu1">
+                                                    <div class="p_first"><a href="민원신청" title="간편 확인/안내"  class="decoration_none">간편 확인/안내</a></div>
+                                                    <p><a href="#" title="사실/진위확인"  class="decoration_none">사실/진위확인</a></p>
+                                                    <p><a href="#" title="행정정보공동이용"  class="decoration_none">행정정보공동이용<br>(e하나로민원)</a></p>
+                                                    <p><a href="#" title="공공자원공유"  class="decoration_none">공공자원공유</a></p>
+                                                    <p><a href="#" title="돌봄시설 등 위치 찾기"  class="decoration_none">돌봄시설 등 위치 찾기</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                <li><a href="./index2.html" title="보조금24" class="decoration_none" >보조금24<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo2"><span>보조금24</span></h2>                                               
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" title="나의 혜택" class="decoration_none">나의 혜택</a></p>
+                                                <p><a href="#" title="가족 구성" class="decoration_none">가족 구성</a></p>
+                                                <p><a href="#" title="간편 찾기" class="decoration_none">간편 찾기</a></p>
+                                                <p><a href="#" title="전체 혜택" class="decoration_none">전체 혜택</a></p>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </li>
+                                <li><a href="./index3.html" title="정책정보" class="decoration_none">정책정보<span></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo3"><span>정책정보</span></h2>                                            
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" class="decoration_none" title="분야별 정책정보">분야별 정책정보</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 조직도">정부/지자체 조직도</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 운영누리집">정부/지자체 운영누리집</a></p>
+                                                <p><a href="#" class="decoration_none" title="행정기간위원회">행정기간위원회</a></p>
+                                                <p><a href="#" class="decoration_none" title="지자체소식">지자체소식</a></p>
+                                                <p><a href="#" class="decoration_none" title="공모전">공모전</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#" title="고객센터" class="decoration_none" id="block">고객센터<span   style="display: block;"></span></a>
+                                    <div class="width100">
+                                        <div class="container">
+                                            <div class="image_box">
+                                                <h2 class="logo4"><span>고객센터</span></h2>
+                                            </div>
+                                            <div class="menu-list">
+                                                <p><a href="#" class="decoration_none" title="분야별 정책정보">정부24 이용방법</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 조직도">공지사항</a></p>
+                                                <p><a href="#" class="decoration_none" title="정부/지자체 운영누리집">자료실</a></p>
+                                                <p><a href="#" class="decoration_none" title="행정기간위원회">서비스지원</a></p>
+                                                <p><a href="#" class="decoration_none" title="지자체소식">자주묻는질문(FAQ)</a></p>
+                                                <p><a href="#" class="decoration_none" title="공모전">온라인 상담예약</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="renew-search">
+                                <div class="search">
+                                    <input type="text" name="srhQuery" id="srhQueryForHeader">
+                                    <button type="submit" id="focusout"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id="section_top">
+                <div class="container2">
+                    <div class="breadclumbs">
+                        <ul class="bc_list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">보조금24</a></li>
+                            <li><a href="#">정부24 이용방법</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <main>  
+                <div class="contentsWrap">
+                    <div class="container2">
+                        <aside id="aside">
+                            <strong>고객센터</strong>
+                            <ul class="nav">
+                                <li class="pc_menu_block"><strong><a href="#" class="active">정부24 이용방법</a></strong></li>
+                                <li><strong><a href="#">공지사항</a></strong></li>
+                                <li class="dnone"><strong><a href="#">자료실</a></strong></li>
+                                <li>
+                                    <strong>
+                                        <a href="#">서비스지원</a>
+                                        <i class="fa fa-angle-down"></i>
+                                    </strong>
+                                    <ul>
+                                        <li class="dnone"><a href="#">프린터 이용안내</a></li>
+                                        <li class="dnone"><a href="#">프로그램 설치 확인</a></li>
+                                        <li><a href="#">전자결제안내</a></li>
+                                        <li><a href="#">무인민원발급안내</a></li>
+                                        <li><a href="#">어디서나 민원</a></li>
+                                    </ul>
+                                </li>
+                                <li><strong><a href="#">자주묻는질문(FAQ)</a></strong></li>
+                                <li><strong><a href="#">온라인 상담예약</a></strong></li>
+                            </ul>
+                        </aside>
+                        <section id="contentsBox">
+                            <div class="title" id="pageCont">
+                                <h1>정부24 이용방법</h1>
+                                <ul class="page_util">
+                                    <li class="facebook">
+                                        <a href="#"  class="ir_so"><span>facebook</span></a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#" class="ir_so"><span>twitter</span></a>
+                                    </li>
+                                    <li class="linkcv">
+                                        <a href="#" class="ir_so"><span>주소 복사하기</span></a>
+                                    </li>
+                                    <li class="iconBox print">
+                                        <a href="#" class="ir_so"><span>프린트하기</span></a>
+                                    </li>   
+                                </ul>
+                            </div>
+                            <div class="cont_inner">
+                                <ul class="guide_tab_element">
+                                    <li class="active"><a href="#">정부24 이용방법</a></li>
+                                    <li><a href="#">회원가입·인증서 등록 방법</a></li>
+                                </ul>
+                                <ul class="guide_inner_tab">
+                                    <li class="active">
+                                        <a data-where="#g1">
+                                            <span class="vm_element">
+                                                <span>신청·조회·발급 <br>(회원)</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-where="#g2">
+                                            <span class="vm_element">
+                                                <span>신청·조회·발급 <br>(비회원)</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-where="#g3">
+                                            <span class="vm_element">
+                                                <span>찾기/안내</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-where="#g4">
+                                            <span class="vm_element">
+                                                <span>나의 생활정보/ <br>모바일 푸시</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-where="#g5">
+                                            <span class="vm_element">
+                                                <span>보조금24</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-where="#g6">
+                                            <span class="vm_element">
+                                                <span>이용 편의</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="guide_count_element_wrap">
+                                    <div class="guide_count_element show" id="g1">
+                                        <h2 class="guide_title">
+                                            <span>신청·조회·발급(회원)</span>
+                                        </h2>
+                                        <ul class="guide_text_dash">
+                                            <li>정부24는 중앙행정기관, 공공기관, 지방자치단체의 서비스 9만 여종을 한 곳에서 안내하고 있습니다. <br>
+                                                그 중 주민등록등본, 토지대장 등 민원사무를 포함하여 다른 기관에서 제공하는 서비스 1,300여종은 정부24에서 바로 신청·조회·발급 받으실 수 있습니다.
+                                            </li>
+                                            <ul>
+                                                <li>- &nbsp;9만여 종 서비스는 ‘서비스신청’ 메뉴에서 확인하세요.</li>
+                                            </ul>
+                                        </ul>
+                                        <div class="guide_cont pd40">
+                                            <p class="guide_cont_title">
+                                                서비스 신청·발급 방법 <span>(예 : 주민등록등(초)본)</span>
+                                            </p>
+                                            <p class="infor_text_right">* 제시된 순서대로 따라 하시면 서비스를 이용하실 수 있습니다.</p>
+                                            <ul>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">1</span>
+                                                            <span class="large_text">이용할 서비스 찾기</span>
+                                                            메인에서 서비스를 클릭하거나, 통합검색을 통해 서비스를 찾을 수 있습니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-1.png" alt="이용할 서비스 찾기 예시 화면">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">2</span>
+                                                            <span class="large_text">서비스 내용 확인</span>
+                                                            서비스 내용을 확인하신 후, [신청하기] 버튼을 클릭하세요.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-2.png" alt="서비스 내용 확인 후 신청하기 예시 화면">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">3</span>
+                                                            <span class="large_text">회원 신청</span>
+                                                            정부24 회원인 경우 회원 신청하기를 클릭합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-3.png" alt="확인하세요! 회원/비회원 신청가능 서비스입니다. 회원 신청하기와 비회원 신청하기 버튼이 있으면 클릭하시면 됩니다. 비회원으로 신청하시더라도, 일부 서비스는 공동인증서가 별도로 필요합니다.">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">4</span>
+                                                            <span class="large_text">회원 로그인</span>
+                                                            간편인증, 공동·금융인증서, 디지털원패스, 아이디, 지문보안인증 중에서 선택하여 로그인합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-4.png" alt="로그인 상세 화면안내로 키보드보안 프로그램 적용 - 안전한 정부24서비스 이용을 위해 키보드보안 프로그램 적용을 권장합니다. 공동인증서, 디지털원패스, 아이디, 지문보안인증, 비회원로그인 방식이 있습니다.
+                                                        공동인증서 등록 안내 - 공동인증서 로그인은 공동인증서 등록 후 이용하실 수 있습니다. - 공동인증서 등록 절차 1.회원가입 2.아이디 로그인 3.MY GOV > 회원정보 > 인증 등록/관리로 이동 4.공동인증서 등록 완료! 
+                                                        확인하세요! -모바일 기기에서 인증서 목록이 보이지 않는 경우 [자세히 보기]
+                                                        -공동인증서는 가까운 은행, 우체국, 증권사에서 인터넷뱅킹, 증권거래용 인증서를 발급받으신 후 이용하시기 바랍니다.
+                                                        -개인정보 보호를 위해 공동인증서의 비밀번호 3회 이상 오류 시, 재시도 하셔야합니다.">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">5</span>
+                                                            <span class="large_text">신청서 작성 후 인증서 전자서명</span>
+                                                            신청인의 주소, 발급형태, 수령방법을 선택하고 민원신청하기를 클릭합니다. <br>
+                                                            - 선택발급에서는 과거의 주소 변동사항, 세대 구성 정보, 세대 구성원 정보, 주민등록번호 뒷자리를 선택할 수 있습니다. <br>
+                                                            - 수령방법은 온라인발급(본인출력) 온라인발급(전자문서지갑), 온라인발급(제3자제출), 등기보통우편, 일반보통우편 수령이 있습니다. (제3자에게 제출하려면, 수신인 아이디, 성명, 연락처를 입력해야 합니다.)
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-5.png" alt="주민등록표등본(초본)교부 신청에서 주민등록표등본, 주민등록표초본, 영문 주민등록표 등본, 영문 주민등록표 초본 중 발급유형을 선택 후 주민등록상의 주소를 확인하고, 발급 형태와 수령방법을 선택 후 민원신청하기 버튼을 클릭합니다.">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">6</span>
+                                                            <span class="large_text">신청내역 확인</span>
+                                                            MY GOV에서 나의 서비스 신청내역을 확인하세요. <br>
+                                                            문서를 출력하시려면 MY GOV에서 
+                                                            <span class="red_text">
+                                                                [문서출력]
+                                                            </span>
+                                                            버튼을 클릭합니다. <br>
+                                                            처리 기간이 소요되는 서비스의 경우, 처리상태에서 처리중 또는 취소 등으로 표기됩니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-6.png" alt="서비스 신청내역 안내로 온라인 신청민원, 제3자제출 및 기관제출(송신), 제3자제출 및 기관제출(수신), 창구접수민원이 있습니다. 3일 이전의 신청내용은 검색기간을 입력한 후 확인하시기 바랍니다. 민원 처리 알림 메일이 수신되지 않을 경우, 스팸메일함을 확인하시기 바랍니다. 문서출력버튼을 클릭하면 문서출력이 가능합니다. ">
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2 class="guide_title">
+                                            <span>민원서류 인쇄 설정 방법 (인터넷 익스플로러)</span>
+                                        </h2>
+                                        <ul class="guide_text_dash">
+                                            <li>인터넷 익스플로러 브라우저에서 민원서류의 정상출력을 위한 인쇄 설정 방법입니다.</li>
+                                        </ul>
+                                        <div class="guide_cont pd40">
+                                            <ul>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">1</span>
+                                                            <span class="large_text">인터넷 익스플로러(Internet Explorer)에서 인쇄 설정</span>
+                                                            브라우저 창에서 
+                                                            <span class="red_text">[파일]>[페이지 설정]</span>
+                                                            을 클릭합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-2-1.png" alt="인터넷 익스플로러 인쇄설정 안내 화면입니다.">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">2</span>
+                                                            <span class="large_text">페이지 설정</span>
+                                                            페이지 설정 창에서  
+                                                            <span class="red_text">[머리글/바닥글]</span>
+                                                            을 
+                                                            <span class="red_text">‘비어있음’</span>
+                                                            으로 선택하고 
+                                                            <span class="red_text">[확인]</span>
+                                                            버튼을 클릭합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-2-2.png" alt="페이지 설정 안내 화면으로 머리글. 바닥글을 비어있음으로 선택하고 확인버튼을 클립합니다. ">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">3</span>
+                                                            <span class="large_text">인쇄하기</span>
+                                                            서비스 신청내역에서 신청한 민원의
+                                                            <span class="red_text"> [문서출력]</span>
+                                                            버튼을 클릭하여 민원서류 출력창을 엽니다.
+                                                            <br>
+                                                            문서출력 창에서 
+                                                            <span class="red_text"> [인쇄]</span>
+                                                            버튼을 클릭하여 출력을 완료합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-2-3.png" alt="민원서류 출력창 안내 화면으로 문서 출력 창에서 인쇄 버튼을 클릭하여 출력을 합니다.">
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <div class="guide_count_element" id="g2">
+                                        <h2 class="guide_title">
+                                            <span>신청·조회·발급(비회원)</span>
+                                        </h2>
+                                        <ul class="guide_text_dash">
+                                            <li>정부24는 중앙행정기관, 공공기관, 지방자치단체의 서비스 9만 여종을 한 곳에서 안내하고 있습니다. <br>
+                                                그 중 주민등록등본, 토지대장 등 민원사무를 포함하여 다른 기관에서 제공하는 서비스 1,300여종은 정부24에서 바로 신청·조회·발급 받으실 수 있습니다.
+                                            </li>
+                                            <ul>
+                                                <li>- &nbsp;9만여 종 서비스는 ‘서비스신청’ 메뉴에서 확인하세요.</li>
+                                            </ul>
+                                        </ul>
+                                        <div class="guide_cont pd40">
+                                            <p class="guide_cont_title">
+                                                서비스 신청·발급 방법 <span>(예 : 주민등록등(초)본)</span>
+                                            </p>
+                                            <p class="infor_text_right">* 제시된 순서대로 따라 하시면 서비스를 이용하실 수 있습니다.</p>
+                                            <ul>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">1</span>
+                                                            <span class="large_text">이용할 서비스 찾기</span>
+                                                            메인에서 서비스를 클릭하거나, 통합검색을 통해 서비스를 찾을 수 있습니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-1.png" alt="이용할 서비스 찾기 예시 화면">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">2</span>
+                                                            <span class="large_text">서비스 내용 확인</span>
+                                                            서비스 내용을 확인하신 후, [신청하기] 버튼을 클릭하세요.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-2.png" alt="서비스 내용 확인 후 신청하기 예시 화면">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">3</span>
+                                                            <span class="large_text">비회원 신청</span>
+                                                            [비회원 신청하기] 버튼을 클릭합니다.
+                                                            <br>- 주민등록등본(초본)은 비회원 신청이 가능하며, 공동인증서가 필요합니다.
+                                                            <br>- 건축물대장 등·초본 발급(열람) 신청과 토지(임야)대장 등본교부 등은 본인 인증이 필요하지 않습니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-5-3.png" alt="확인하세요! 회원/비회원 신청가능 서비스입니다. 회원 신청하기와 비회원 신청하기 버튼이 있으면 클릭하시면 됩니다. 비회원으로 신청하시더라도, 일부 서비스는 공동인증서가 별도로 필요합니다.">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">4</span>
+                                                            <span class="large_text">비회원 신청 정보 입력 </span>
+                                                            서비스 내용을 확인하신 후, 신청하기 버튼을 클릭합니다.
+                                                            <br>
+                                                            (제3자에게 제출하려면, 수신인 아이디, 성명, 연락처를 입력해야 합니다.)
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-5-4.png" alt="비회원 신청 정보 입력 안내 화면으로 개인정보 수집 및 고유식별정보 수집 이용동의와 공유식별정보 수집에 대한 안내에 동의 하신 후 비회원 신청 정보입력을 이름, 주민등록번호, 연락처(핸드폰번호), 민원처리정보 SMS 수신동의, 입력확인 입력 후 확인 버튼을 클릭하시면 됩니다.">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">5</span>
+                                                            <span class="large_text">신청서 작성 후 인증서 전자서명</span>
+                                                            신청인의 주소, 발급형태, 수령방법을 선택하고 민원신청하기를 클릭합니다. <br>
+                                                            - 선택발급에서는 과거의 주소 변동사항, 세대 구성 정보, 세대 구성원 정보, 주민등록번호 뒷자리를 선택할 수 있습니다. <br>
+                                                            - 수령방법은 온라인발급(본인출력) 온라인발급(전자문서지갑), 온라인발급(제3자제출), 등기보통우편, 일반보통우편 수령이 있습니다. (제3자에게 제출하려면, 수신인 아이디, 성명, 연락처를 입력해야 합니다.)
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-5.png" alt="주민등록표등본(초본)교부 신청에서 주민등록표등본, 주민등록표초본, 영문 주민등록표 등본, 영문 주민등록표 초본 중 발급유형을 선택 후 주민등록상의 주소를 확인하고, 발급 형태와 수령방법을 선택 후 민원신청하기 버튼을 클릭합니다.">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">6</span>
+                                                            <span class="large_text">비회원 신청·조회·발급</span>
+                                                            <span class="red_text">
+                                                                [문서출력]
+                                                            </span>
+                                                            버튼을 클릭합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-1-6.png" alt="서비스 신청내역 안내로 온라인 신청민원, 제3자제출 및 기관제출(송신), 제3자제출 및 기관제출(수신), 창구접수민원이 있습니다. 3일 이전의 신청내용은 검색기간을 입력한 후 확인하시기 바랍니다. 민원 처리 알림 메일이 수신되지 않을 경우, 스팸메일함을 확인하시기 바랍니다. 문서출력버튼을 클릭하면 문서출력이 가능합니다. ">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">7</span>
+                                                            <span class="large_text">비회원 신청내역 확인 방법</span>
+                                                            비회원 로그인 상태에서, 메인상단의
+                                                            <span class="red_text">
+                                                                [MY GOV]
+                                                            </span>
+                                                            버튼을 클릭하시면 서비스 신청내역 화면으로 이동합니다. 
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-5-7.png" alt="비회원 신청내역 확인 방법 안내 화면으로 메인 상단 배너 우측에 인증서 로그인 후 확인 버튼을 클릭하여 로그인 합니다. ">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">8</span>
+                                                            <span class="large_text">서비스 신청내역</span>
+                                                            서비스 신청내역을 확인하고, 
+                                                            <span class="red_text">
+                                                                [문서출력]
+                                                            </span>
+                                                            버튼을 클릭합니다. 
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-5-8.png" alt="서비스 신청내역 안내 화면으로 서비스 신청내역을 확인 후 문서 출력 버튼을 클릭하여 문서를 출력합니다. ">
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2 class="guide_title">
+                                            <span>민원서류 인쇄 설정 방법 (인터넷 익스플로러)</span>
+                                        </h2>
+                                        <ul class="guide_text_dash">
+                                            <li>인터넷 익스플로러 브라우저에서 민원서류의 정상출력을 위한 인쇄 설정 방법입니다.</li>
+                                        </ul>
+                                        <div class="guide_cont pd40">
+                                            <ul>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">1</span>
+                                                            <span class="large_text">인터넷 익스플로러(Internet Explorer)에서 인쇄 설정</span>
+                                                            브라우저 창에서 
+                                                            <span class="red_text">[파일]>[페이지 설정]</span>
+                                                            을 클릭합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-2-1.png" alt="인터넷 익스플로러 인쇄설정 안내 화면입니다.">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">2</span>
+                                                            <span class="large_text">페이지 설정</span>
+                                                            페이지 설정 창에서  
+                                                            <span class="red_text">[머리글/바닥글]</span>
+                                                            을 
+                                                            <span class="red_text">‘비어있음’</span>
+                                                            으로 선택하고 
+                                                            <span class="red_text">[확인]</span>
+                                                            버튼을 클릭합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-2-2.png" alt="페이지 설정 안내 화면으로 머리글. 바닥글을 비어있음으로 선택하고 확인버튼을 클립합니다. ">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">3</span>
+                                                            <span class="large_text">인쇄하기</span>
+                                                            서비스 신청내역에서 신청한 민원의
+                                                            <span class="red_text"> [문서출력]</span>
+                                                            버튼을 클릭하여 민원서류 출력창을 엽니다.
+                                                            <br>
+                                                            문서출력 창에서 
+                                                            <span class="red_text"> [인쇄]</span>
+                                                            버튼을 클릭하여 출력을 완료합니다.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img-guide-1-2-3.png" alt="민원서류 출력창 안내 화면으로 문서 출력 창에서 인쇄 버튼을 클릭하여 출력을 합니다.">
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="guide_count_element" id="g3">
+                                        <h2 class="guide_title">
+                                            <span>찾기/안내</span>
+                                        </h2>
+                                        <ul class="guide_text_dash">
+                                            <li>정부24에서는 중앙행정기관, 공공기관 및 지방자치단체의 서비스 9만 여종을 한 곳에서 안내하고
+                                                <br>
+                                                있습니다. 제공되는 서비스들을 다양한 방법으로 찾아 이용하시고, 생애주기별/상황별로 추천해 드리는
+                                                <br>
+                                                서비스도 확인하세요.
+                                            </li>
+                                        </ul>
+                                        <div class="guide_cont pd40">
+                                            <p class="guide_cont_title">
+                                                서비스 안내
+                                            </p>
+                                            <div class="guide_table">
+                                                <table>
+                                                    <caption>서비스 안내표로 메뉴명, 내용, 바로가기 정보를 나타냄</caption>
+                                                    <colgroup>
+                                                        <col style="width:20%">
+                                                        <col style="width:55%">
+                                                        <col style="width:25%">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">메뉴명</th>
+                                                            <th scope="col">내용</th>
+                                                            <th scope="col">바로가기</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><strong>보조금24</strong></td>
+                                                            <td class="text_left">내가 받을 수 있는 정부 혜택을 쉽게 확인하고 신청할 수 있는 맞춤형 서비스입니다.</td>
+                                                            <td><a href="#" class="guide_cont_btn">바로가기</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <strong>원스톱/생애주기/ <br>꾸러미 서비스</strong>
+                                                            </td>
+                                                            <td class="text_left">
+                                                                <ul class="table">
+                                                                    <li>
+                                                                        <strong>○ 생애주기 서비스</strong>
+                                                                        <p>영유아-아동청소년-청년-중장년-어르신까지 연령대별 챙겨야할 서비스를 제공합니다.</p>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="guide_text_dash table">
+                                                                    <li>
+                                                                        <strong>○ 꾸러미 서비스</strong>
+                                                                        <p>보금자리, 가족안전, 반려동물, 퇴직후 생활 등 생활에 필요한 정보와 서비스를 묶어서 제공합니다.</p>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="guide_text_dash table">
+                                                                    <li>
+                                                                        <strong>○ 원스톱서비스</strong>
+                                                                        <p>맘편한 임신, 행복출산, 온종일 돌봄, 꿈청소년, 전입신고+, 안심상속 서비스를 한 번에 통합 신청 처리할 수 있는 서비스를 제공합니다.</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="guide_cont_btn">바로가기</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <strong>연령/대상별<br>서비스</strong>
+                                                            </td>
+                                                            <td class="text_left">
+                                                                자격 및 생활환경 조건에 따라  받을 수 있는 서비스를 추천해 드립니다.  
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="guide_cont_btn">바로가기</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <strong>분야별 서비스</strong>
+                                                            </td>
+                                                            <td class="text_left">
+                                                                정부24에서 제공하는 전체 서비스를 분야별로 확인할 수 있습니다.   
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="guide_cont_btn">바로가기</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <strong>외국인서비스</strong>
+                                                            </td>
+                                                            <td class="text_left">
+                                                                국내 체류 중인 외국인에게 정부에서 제공하고 있는 온라인 발급 민원 및 교육·상담·지원 혜택 등 생활정보를 통합 안내 합니다.  
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="guide_cont_btn">바로가기</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guide_count_element" id="g4">
+                                        <h2 class="guide_title">
+                                            <span>나의 생활정보/모바일 푸시</span>
+                                        </h2>
+                                        <ul class="guide_text_dash">
+                                            <li>정부24 회원 가입시 ‘나의 생활정보’ 서비스에 이용동의 하시면 휴면예금, 여권만료일 등 나에게 필요한 정보를 확인할 수 있습니다.
+                                                <ul>
+                                                    <li>- 재산세, 자동차세, 교통과태료, 통행료 미납액은 납부하기 버튼을 통해서 바로 납부하실 수 있습니다.</li>
+                                                    <li>- 모바일 앱(환경설정)에서 사전알림(푸시) 동의 하시면 기한이 정해진 서비스에 대한 알림을 받으실 수 있습니다.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="guide_cont pd40">
+                                            <p class="guide_cont_title">나의 생활정보</p>
+                                            <p class="guide_btn_pos"><a href="#" class="guide_cont_btn">생활정보 안내 바로가기</a></p>
+                                            <p class="img_cont"><img src="./CustomerService/img-guide-1-3-1.png" alt="나의 생활정보 서비스는 공인인증 로그인 후 나의 생활정보 확인을 할 수 있습니다"></p>
+                                            <p class="img_cont"><img src="./CustomerService/img-guide-1-3-2.png" alt="나의 생활정보 제공 목록으로 가족/건강(7종),세금/미환급금(12종), 연금(8종), 병역(5종), 범칙금/과태료(3종), 자동차(9종), 생활금융(12종), 주택/복지(11종)이 있습니다."></p>
+                                            <p class="guide_infor">나의 생활정보 서비스에서 납부를 원하시는 서비스를 선택하시면 납부가 가능합니다.</p>
+                                            <p class="img_cont"><img src="./CustomerService/img-guide-1-3-7.png" alt="납부 가능서비스"></p>
+                                            <p class="guide_infor">재산세, 주민세, 자동차세, 주정차 위반 과태료, 교통 범칙금 과태료, 고속도로 미납통행료</p>
+                                            <p class="img_cont margin"><img src="./CustomerService/img-guide-1-3-3.png" alt="나의 생활정보 목록에서 상세내역을 확인하여 납부하실수 있습니다."></p>
+                                            <p class="guide_cont_title">모바일 푸시</p>
+                                            <p class="guide_infor">모바일앱에서 푸시알림을 수신동의하면 나의 생활정보 3종(여권만료일, 자동차검사기간, 고속도로 미납통행료)에 대한 푸시 알림을 받을 수 있습니다.</p>
+                                            <ul class="list_type three">
+                                                <li>
+                                                    <div class="inner">
+                                                        <img src="./CustomerService/img-guide-1-3-4.png" alt="정부24 메인페이지 하단 설정">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="inner">
+                                                        <img src="./CustomerService/img-guide-1-3-5.png" alt="환경설정-푸시알림설정">
+                                                    </div>
+                                                </li>
+                                                <li class="last_child">
+                                                    <div class="inner">
+                                                        <img src="./CustomerService/img-guide-1-3-6.png" alt="알림내역">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="guide_count_element" id="g5">
+                                        <h2 class="guide_title">
+                                            <span>보조금24</span>
+                                        </h2>
+                                        <ul class="guide_text_dash">
+                                            <li>중앙부처, 지자체, 공공기관에서 현금, 현물, 바우처 이용권 등으로 제공하는 약 1만여 개의 수혜 서비스를 <br>대상으로 나와 가족이 받을 수 있는 정부 혜택을 한 번에 확인하고 신청할 수 있는 맞춤형 서비스입니다. </li>
+                                        </ul>
+                                        <div class="guide_cont pd40 subsidy_cont">
+                                            <p class="guide_cont_title">온라인 이용</p>
+                                            <ul>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">1</span>
+                                                            <span class="large_text">나의 혜택 확인</span>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img_benefit1.png" alt="보조금24 온라인이용방법 화면">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">2</span>
+                                                            <span class="large_text">가족 혜택 확인</span>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img_benefit2.png" alt="보조금24 온라인이용방법 화면">
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <ul class="guide_text_dash member">
+                                                        <li>
+                                                            <span class="guide_num g1">3</span>
+                                                            <span class="large_text">개인/가구 특성 정보 관리</span>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img_benefit3.png" alt="보조금24 온라인이용방법 화면">
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="guide_cont pd40 subsidy_cont">
+                                            <p class="guide_cont_title">가까운 읍·면·동 주민센터 이용</p>
+                                            <ul>
+                                                <li>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img_useway1.png" alt="보조금24 가까운 읍·면·동 주민센터 이용방법 화면">
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="guide_cont pd40 subsidy_cont">
+                                            <p class="guide_cont_title">찾아가는 보조금24(모바일 행정)</p>
+                                            <ul>
+                                                <li>
+                                                    <p class="img_cont">
+                                                        <img src="./CustomerService/img_useway2.png" alt="보조금24 가까운 읍·면·동 주민센터 이용방법 화면">
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="guide_count_element" id="g6">
+                                        <h2 class="guide_title">
+                                            <span>이용 편의</span>
+                                        </h2>
+                                        <ul class="guide_text_dash">
+                                            <li>장애인분들과 어르신을 위한 편의 기능을 제공합니다.</li>
+                                        </ul>
+                                        <div class="guide_cont pd40 subsidy_cont">
+                                            <p class="guide_cont_title">장애인 이용안내</p>
+                                            <p class="guide_btn_pos"><a href="#" class="guide_cont_btn">장애인 이용안내 바로가기</a></p>
+                                            <ul class="guide_text_dash member pd0">
+                                                <li>
+                                                    <span class="large_text">시각장애인을 위한 사이트 이용안내</span>
+                                                    시각장애인을 위한 별도의 홈페이지를 구축하지 않고 이용할 수 있도록 하였습니다. 시각장애인 여러분들께서 정부24 사이트의 편리한 이용을 위해서는 스크린 리더 프로그램이  필요합니다. 자세한 내용은 장애인 이용안내 페이지에서 확인이 가능합니다.
+                                                </li>
+                                                <li style="margin-top:30px">
+                                                    <span class="large_text">청각장애인을 위한 통신중계서비스 안내</span>
+                                                    한국정보화진흥원에서는 청각이나 언어장애를 가지고 있는 사람이 비장애인과 전화를 통해 의사소통을 할 수 있도록 지원하는 실시간 전화 중계 서비스를 운영하고 있습니다. 문자, 영상통화, 음성통화를 연계 지원하고 있으며, 각종문의, 쇼핑, 예약, 구직 활동을 비롯하여, 회사업무 통화, 가족, 친구와의 통화 시에도 이용하실 수 있습니다.
+                                                </li>
+                                            </ul>
+                                            <p class="guide_cont_title" style="margin-top:30px">어르신 편의제공</p>
+                                            <p class="guide_infor">정부24 사이트에서, 더 커진 글자크기로 어르신들이 편리하게 정보를 확인할 수 있습니다. 사이트 최상단 영역에서 + 버튼을 클릭하면 더 커진 글자크기와 화면을 확인할 수 있습니다.</p>
+                                            <p class="img_cont"><img src="./CustomerService/img-guide-1-4-1.png" alt="화면크기를 확대해서 더 크게 보세요!"></p>
+                                            <p class="img_cont last_child">
+                                                <a href="#"><img src="./CustomerService/img-guide-1-4-2.png" alt="정부24에 대해 더 궁금한 점이 있으시면  자주 묻는 질문(FAQ)를 이용하시거나, 정부24 콜센터로 연락하세요. 정부24 FAQ 가기 정부24 콜센터 1588-2188"></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <div class="footer-element">
+            <div class="top-element">
+                <div class="container">
+                    <div class="fl">
+                        <ul class="footer-menu">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                            <li><a href="#">담당자연락처</a></li>
+                            <li><a href="#">개선의견수렴</a></li>
+                            <li><a href="#">open API</a></li>
+                        </ul>
+                    </div>
+                    <div class="fr">
+                        <ul class="footer-sns">
+                            <li>
+                                <a href="#" title="정부24 네이버 블로그-새창" class="blog">
+                                    <span class="hd-element ir_so">블로그</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 트위터-새창" class="tw">
+                                    <span class="hd-element ir_so">트위터</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 페이스북-새창" class="fb">
+                                    <span class="hd-element ir_so">페이스북</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 카카오스토리-새창" class="ks">
+                                    <span class="hd-element ir_so">카카오스토리   </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="정부24 유투브-새창" class="yt">
+                                    <span class="hd-element ir_so">유투브</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="body-element">
+                <div class="container">
+                   <div class="footer_box">
+                        <p class="footer-logo"><a href="#"><img src="./img/img-footer-logo (1).png" alt="logo"></a></p>
+                        <p class="footer-infor">정부24 콜센터 <b>1588-2188</b>, 02-3703-2500 (09:00 ~ 18:00 평일) <br>
+                            <b>※ 콜센터 내선 번호 안내</b><br>
+                            <b>[1번]</b> 주민등록등초본,    축물대장, 토지대장 관련<br class="mo-only"> <b>[2번]</b> 민원 신청 및 결과 관련 <br class="mo-only"><b>[3번]</b> 신청 완료 민원 출력 관련 <br>
+                            <b>[4번]</b> 회원 가입, 로그인 관련 <br class="mo-only"><b>[5번]</b> 보조금24, 정부24 이용 관련<br><br>
+                            정부민원안내콜센터 국번없이 110 (365일 24시간)<br> 
+                            Copyright &copy; Ministry of the Interior and Safety. All Rights Reserved.</p>
+                        <p class="logo_wa"><a href="#"><img src="./img/logo_wa (1).png" alt="logo"></a></p>
+                        <div class="footer_top_btn">
+                            <a href="#">TOP</a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
